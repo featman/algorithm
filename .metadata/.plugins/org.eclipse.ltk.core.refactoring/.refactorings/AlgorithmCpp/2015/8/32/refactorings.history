@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;myAlgorithm/src/myAlgorithm.cpp&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;myAlgorithm.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/myAlgorithm.cpp" name="main.cpp" stamp="1438497928947" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;myAlgorithm/src/general.h&apos; to &apos;spaceReplace.h&apos;" description="Rename resource &apos;general.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/general.h" name="spaceReplace.h" stamp="1438498598268" updateReferences="true"/>
+</session>

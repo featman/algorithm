@@ -1,0 +1,28 @@
+/*
+ * general.h
+ *
+ *  Created on: 2015Äê8ÔÂ2ÈÕ
+ *      Author: Song Zhi-Cheng
+ */
+
+
+#ifndef SPACEREPLACE_H_
+#define SPACEREPLACE_H_
+
+class Solution {
+public:
+    /**
+     * @param string: An array of Char
+     * @param length: The true length of the string
+     * @return: The true length of new string
+     */
+    int replaceBlank() {
+        // Write your code here
+    	cout<<"hello,world"<<endl;
+    	return 0;
+    }
+};
+
+
+
+#endif /* SPACEREPLACE_H_ */

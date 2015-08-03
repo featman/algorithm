@@ -1,0 +1,9 @@
+10:21:29 **** Rebuild of configuration Debug for project AlgorithmCpp ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function `int main()':
+..\src\main.cpp:30: warning: comparison between signed and unsigned integer expressions
+g++ -o AlgorithmCpp.exe "src\\main.o" 
+
+10:21:31 Build Finished (took 2s.675ms)
+

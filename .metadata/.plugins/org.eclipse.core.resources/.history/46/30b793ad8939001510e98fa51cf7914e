@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : myAlgorithm.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+
+
+#include "withString.h"
+int main()
+{
+	Solution s.
+	vector<string> val =
+    return 0;
+}
+

@@ -1,7 +1,5 @@
 /*
-设计一种方法，将一个字符串中的所有空格替换成 %20 。
-你可以假设该字符串有足够的空间来加入新的字符，
-且你得到的是“真实的”字符长度。
+ * leetcode string test
  */
 
 
@@ -18,19 +16,25 @@ using namespace std;
 
 class Solution {
 public:
-    /**
-     * @param string: An array of Char
-     * @param length: The true length of the string
-     * @return: The true length of new string
-     */
-    int replaceBlank(char string[], int length) {
-        // Write your code here
-    }
 
-
-    vector<string> generateParenthesis(int n) {
-
-    }
+//	Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+//
+//	For example, given n = 3, a solution set is:
+//
+//	"((()))", "(()())", "(())()", "()(())", "()()()"
+	vector<string> generateParenthesis(int n) {
+		vector<string> res;
+		addingpar(res, "", n, 0);
+		return res;
+	}
+	void addingpar(vector<string> &v, string str, int n, int m){
+		if(n==0 && m==0) {
+			v.push_back(str);
+			return;
+		}
+		if(m > 0){ addingpar(v, str+")", n, m-1); }
+		if(n > 0){ addingpar(v, str+"(", n-1, m+1); }
+	}
 
 
 };

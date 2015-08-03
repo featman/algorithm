@@ -1,9 +1,1 @@
-10:27:09 **** Rebuild of configuration Debug for project AlgorithmC ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algorithmC.o" "..\\src\\algorithmC.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\MDoBT.o" "..\\src\\MDoBT.c" 
-gcc -o AlgorithmC.exe "src\\simple.o" "src\\algorithmC.o" "src\\MDoBT.o" 
-
-10:27:11 Build Finished (took 1s.745ms)
-
+Info: Nothing to build for AlgorithmC

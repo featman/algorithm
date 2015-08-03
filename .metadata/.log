@@ -595,3 +595,8 @@ java.io.IOException: Cannot run program "rm": Launching failed
 
 !ENTRY org.eclipse.ui 4 4 2015-08-03 17:20:27.817
 !MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@148ab2cc)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@40f3e21e)}
+
+!ENTRY org.eclipse.core.resources 2 2 2015-08-03 18:14:23.117
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-08-03 18:14:23.117
+!MESSAGE The project description file (.project) for 'linuxShell' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

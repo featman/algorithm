@@ -18,12 +18,12 @@ int main()
     cout << "size of s is(using iterator): " << s.size() << endl ;
     for(vector<string>::iterator myiter=s.begin(); myiter!=s.end(); ++myiter)
    {
-        cout << *myiter << endl; //iteratorï¿½ï¿½ï¿½ï¿½
+        cout << *myiter << endl; //iterator±éÀú
         *myiter = "hi";
    }
 
     cout << endl << "use index visit:" << endl;
-    for(i = 0; i < s.size(); i++)cout << s[i] << endl; //ä¸‹æ ‡éå†
+    for(i = 0; i < s.size(); i++)cout << s[i] << endl; //ÏÂ±ê±éÀú
     return 0;
 }
 

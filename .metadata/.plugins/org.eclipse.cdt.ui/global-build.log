@@ -205,3 +205,20 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp"
 ..\src\main.cpp:30: warning: comparison between signed and unsigned integer expressions
 g++ -o AlgorithmCpp.exe "src\\main.o" 
 Info: Nothing to build for algorithmC
+10:27:09 **** Rebuild of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algorithmC.o" "..\\src\\algorithmC.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\MDoBT.o" "..\\src\\MDoBT.c" 
+gcc -o AlgorithmC.exe "src\\simple.o" "src\\algorithmC.o" "src\\MDoBT.o" 
+10:27:11 **** Incremental Build of configuration Debug for project AlgorithmCpp ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:11:
+..\src\withString.h: In member function `int Solution::replaceBlank(char*, int)':
+..\src\withString.h:28: warning: no return statement in function returning non-void
+..\src\withString.h: In member function `std::vector<std::string, std::allocator<std::string> > Solution::generateParenthesis(int)':
+..\src\withString.h:33: warning: no return statement in function returning non-void
+..\src\main.cpp: In function `int main()':
+..\src\main.cpp:26: warning: comparison between signed and unsigned integer expressions
+g++ -o AlgorithmCpp.exe "src\\main.o" 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AlgorithmC/src/algorithmC.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;algorithmC.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/algorithmC.c" name="main.c" stamp="1438570983864" updateReferences="true"/>
+</session>

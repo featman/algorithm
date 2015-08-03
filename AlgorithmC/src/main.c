@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : algorithmC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "General.h"
+
+
+int main(void) {
+/*	int a[] = {7,20,30,20,30,40,50,40,50,7,7};
+	printf("%d\n",singleNumber(a,11));*/
+	char* a = "2147483648";
+	printf("%d\n",INT_MAX_);
+//	printf("heello\n");
+	return 0;
+}

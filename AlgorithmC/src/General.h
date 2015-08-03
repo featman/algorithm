@@ -1,25 +1,28 @@
 /*
  * MDoBT.h
  *
- *  Created on: 2015Äê8ÔÂ2ÈÕ
+ *  Created on: 2015ï¿½ï¿½8ï¿½ï¿½2ï¿½ï¿½
  *      Author: Song Zhi-Cheng
  */
 
 #ifndef GENERAL_H_
 #define GENERAL_H_
+
+#include <assert.h>
 #define false 0
 #define true 1
-
 typedef int bool;
-
-int singleNumber(int* nums, int numsSize);
-
 
 struct TreeNode {
 	int val;
 	struct TreeNode *left;
 	struct TreeNode *right;
 };
+
+int singleNumber(int* nums, int numsSize);
+int myAtoi(char* str);
+
+
 
 
 

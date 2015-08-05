@@ -1,0 +1,33 @@
+/*
+ * heapsort.c
+ *
+ *  Created on: 2015年8月5日
+ *      Author: Song Zhi-Cheng
+ */
+
+
+#include "General.h"
+
+
+void adjustHeap(int arr[],int start,int end){
+	int tmp = arr[start];
+	int i;
+	for(i=2*start+1;i<end;i*=2){
+		if(arr[i] < arr[i+1]) i++;//选择大的子节点
+		if(arr[i] < tmp) break;//选择子节点和父节点中较大的一个
+		int temp = arr[i];
+		arr[i] = arr[start];
+		arr[start] = temp;
+		start = i;
+	}
+}
+
+
+void heapSort(int arr[], int n){
+
+	int i ;
+	for(i=n/2;i>=0;i--){
+
+	}
+}
+

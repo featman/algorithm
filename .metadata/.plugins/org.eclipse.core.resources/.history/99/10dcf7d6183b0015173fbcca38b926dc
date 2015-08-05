@@ -1,0 +1,37 @@
+/*
+ * heapsort.c
+ *
+ *  Created on: 2015年8月5日
+ *      Author: Song Zhi-Cheng
+ */
+
+
+#include "General.h"
+
+
+void adjustHeap(int arr[],int start,int end){
+	int tmp = arr[start];
+	int i;
+	//每次调整3个，如果传入进来的节点start,i,i+1，已经是一个有序的序列，那么循环执行一次就会结束。
+	//如果传入进来的三个节点顺序不对，那么先调整这三个节点，然后再进入下一次循环以i或者i+1作为新的父节点进行调整，有可能调整到叶子节点，直到满足break。
+	for(i=2*start+1;i<end;i*=2){
+		if(arr[i] < arr[i+1]) i++;//选择大的子节点
+		if(arr[i] < tmp) break;//选择子节点和父节点中较大的一个//这里选择tmp是因为这是进入函数的初始节点，在第一次循环的时候这个值已经可以确定为暂时最大。
+		int temp = arr[i];
+		arr[i] = arr[start];
+		arr[start] = temp;
+		start = i;
+	}
+}
+
+
+void heapSort(int arr[], int n){
+
+	int i ;
+	//建立一个初始堆，这个堆是一个原始的序列
+	//此循环从n/2开始，是要从中间部分向上逐渐调整。
+	for(i=n/2;i>=0;i--){
+		adjustHeap(arr,i,n-1);
+	}
+}
+

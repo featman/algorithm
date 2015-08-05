@@ -1,11 +1,11 @@
 /*
  * SingNumber.c
  *
- *  Created on: 2015Äê8ÔÂ2ÈÕ
+ *  Created on: 2015ï¿½ï¿½8ï¿½ï¿½2ï¿½ï¿½
  *      Author: Song Zhi-Cheng
  */
 
-
+#include "General.h"
 
 
 int singleNumber(int* nums, int numsSize) {
@@ -16,4 +16,33 @@ int singleNumber(int* nums, int numsSize) {
 	}
 	return res;
 
+}
+
+
+int maxDepth(struct TreeNode* root) {
+	if(!root) return 0;
+	int leftDept,rightDept;
+	leftDept = maxDepth(root->left);
+	rightDept = maxDepth(root->right);
+
+	return leftDept>rightDept?leftDept+1:rightDept+1;
+}
+
+/*
+Same Tree
+
+Given two binary trees, write a function to check if they are equal or not.
+
+Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+*/
+bool isSameTree(struct TreeNode* p, struct TreeNode* q){
+	if(!p&&!q) return true;
+	if(p&&q)
+		if(p->val != q->val)
+			return false;
+
+	if(!p&&q) return false;
+	if(p&&!q) return false;
+
+	return isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
 }

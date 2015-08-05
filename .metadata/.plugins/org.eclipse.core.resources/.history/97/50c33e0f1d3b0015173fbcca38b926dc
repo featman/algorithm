@@ -1,0 +1,62 @@
+/*
+ ============================================================================
+ Name        : algorithmC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "General.h"
+
+
+//int main(void) {
+//
+//	int arr[] = {9,8,7,6,5,4,3,2,1};
+//	heapSort(arr,9);
+//	int i ;
+//	for(i=0;i<9;i++)
+//		printf("%d ",arr[i]);
+//	printf("\n");
+//	return 0;
+//}
+void HeapAdjust(int arr[],int start,int end){
+	int temp = arr[start];
+	int i;
+	for(i=2*start+1; i<=end; i*=2){
+		if(arr[i]<arr[i+1] && i<end) i++;
+		if(temp>arr[i]) break;
+		int tmp = arr[start];
+		arr[start] = arr[i];
+		arr[i] = tmp;
+		start = i;
+	}
+}
+
+void HeapSort(int arr[], int n){
+	int i;
+	for(i=n/2; i>=0; i--){
+		HeapAdjust(arr,i,n-1);
+	}
+	for(i=n-1; i>0; i--){
+		int temp = arr[i];
+		arr[i] = arr[0];
+		arr[0] = temp;
+		HeapAdjust(arr,0,i-1);
+	}
+}
+
+
+int main(void) {
+	int arr[] = {6,5,4,3,2,1};
+	HeapSort(arr,6);
+	int i;
+	for(i=0;i<6;i++)
+		printf("%d ",arr[i]);
+	printf("\n");
+
+	return EXIT_SUCCESS;
+}

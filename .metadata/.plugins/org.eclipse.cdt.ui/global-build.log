@@ -105,3 +105,134 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c"
 ..\src\main.c:20: error: (Each undeclared identifier is reported only once
 ..\src\main.c:20: error: for each function it appears in.)
 ..\src\main.c:19: warning: unused variable `a'
+10:40:36 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\MDoBT.o" "..\\src\\MDoBT.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+10:42:04 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:43:00 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+Info: Nothing to build for AlgorithmC
+Info: Nothing to build for AlgorithmC
+10:43:16 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:43:38 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+..\src\heapSort.c: In function `adjustHeap':
+..\src\heapSort.c:13: warning: unused variable `tmp'
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:43:57 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:48:25 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:48:37 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+10:50:49 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:51:20 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+..\src\heapSort.c: In function `adjustHeap':
+..\src\heapSort.c:19: error: `tmp' undeclared (first use in this function)
+..\src\heapSort.c:19: error: (Each undeclared identifier is reported only once
+..\src\heapSort.c:19: error: for each function it appears in.)
+10:51:23 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+..\src\heapSort.c: In function `adjustHeap':
+..\src\heapSort.c:19: error: `tmp' undeclared (first use in this function)
+..\src\heapSort.c:19: error: (Each undeclared identifier is reported only once
+..\src\heapSort.c:19: error: for each function it appears in.)
+10:51:28 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:51:39 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+10:52:17 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:53:06 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:53:20 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:53:45 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:53:53 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+Info: Nothing to build for AlgorithmC
+10:57:36 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+src\MDoBT.o: In function `maxDepth':
+E:/myrepo/algorithm/AlgorithmC/Debug/../src/MDoBT.c:13: multiple definition of `maxDepth'
+src\simple.o:E:/myrepo/algorithm/AlgorithmC/Debug/../src/simple.c:22: first defined here
+src\MDoBT.o: In function `isSameTree':
+E:/myrepo/algorithm/AlgorithmC/Debug/../src/MDoBT.c:29: multiple definition of `isSameTree'
+src\simple.o:E:/myrepo/algorithm/AlgorithmC/Debug/../src/simple.c:38: first defined here
+collect2: ld returned 1 exit status
+10:58:00 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" "src\\MDoBT.o" 
+src\MDoBT.o: In function `maxDepth':
+E:/myrepo/algorithm/AlgorithmC/Debug/../src/MDoBT.c:13: multiple definition of `maxDepth'
+src\simple.o:E:/myrepo/algorithm/AlgorithmC/Debug/../src/simple.c:22: first defined here
+src\MDoBT.o: In function `isSameTree':
+E:/myrepo/algorithm/AlgorithmC/Debug/../src/MDoBT.c:29: multiple definition of `isSameTree'
+src\simple.o:E:/myrepo/algorithm/AlgorithmC/Debug/../src/simple.c:38: first defined here
+collect2: ld returned 1 exit status
+10:58:29 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" 
+11:04:48 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC

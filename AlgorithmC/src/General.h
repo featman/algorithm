@@ -20,9 +20,11 @@ struct TreeNode {
 };
 
 int singleNumber(int* nums, int numsSize);
+int maxDepth(struct TreeNode* root);
+bool isSameTree(struct TreeNode* p, struct TreeNode* q);
 int myAtoi(char* str);
-
-
+void heapSort(int arr[], int n);
+void adjustHeap(int arr[],int start,int end);
 
 
 

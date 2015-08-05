@@ -1,0 +1,36 @@
+/*
+ * quickSort.c
+ *
+ *  Created on: 2015年8月5日
+ *      Author: Song Zhi-Cheng
+ */
+
+
+#include "General.h"
+/*
+ *  快速排序所谓的最好情况和最坏情况不一样，如何才是最好，如何才是最坏？
+ *	最好情况是，选取到那个基准正好为比较中间的值，比如一个序列，10，23，45，8，9，这样就比较好，彼此到次数少，所以时间复杂度会变小，为nlog2n，
+ *	最坏情况是，选取到这个序列有一定到顺序，这样再排序到时候，就会使得比较次数增加（每一轮比上次少1个），时间复杂度o(n2)
+ */
+void quickSort(int arr[], int left, int right){
+
+	if(left > right) return;//递归必须要有退出的语句！
+	int index = left;
+	int l = left, r = right;
+	while(l < r){
+		while(arr[r]>arr[index] && l<r) r--;
+		while(arr[l]<arr[index] && l<r) l++;
+		int tmp = arr[r];
+		arr[r] = arr[l];
+		arr[l] = tmp;
+	}
+	int temp = arr[l];
+	arr[l] = arr[index];
+	arr[index] = temp;
+
+
+	quickSort(arr,left,l-1);
+	quickSort(arr,l+1,right);
+}
+
+

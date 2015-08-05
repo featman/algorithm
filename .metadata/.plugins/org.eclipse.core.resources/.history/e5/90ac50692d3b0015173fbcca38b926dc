@@ -1,0 +1,22 @@
+/*
+ * quickSort.c
+ *
+ *  Created on: 2015年8月5日
+ *      Author: Song Zhi-Cheng
+ */
+
+
+#include "General.h"
+
+void quickSort(int arr[], int left, int right){
+	int i;
+	int index = left;
+	int l = left, r = right;
+	while(l < r){
+		while(arr[r]>index && l<r) r--;
+		while(arr[l]<index && l<r) l++;
+
+	}
+}
+
+

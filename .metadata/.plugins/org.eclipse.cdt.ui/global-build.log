@@ -236,3 +236,63 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
 gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\main.o" "src\\heapSort.o" 
 Info: Nothing to build for AlgorithmC
+12:49:58 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+..\src\quickSort.c: In function `quickSort':
+..\src\quickSort.c:12: warning: unused variable `i'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+12:50:27 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+12:50:45 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+12:54:19 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+..\src\quickSort.c: In function `quickSort':
+..\src\quickSort.c:13: error: `l' undeclared (first use in this function)
+..\src\quickSort.c:13: error: (Each undeclared identifier is reported only once
+..\src\quickSort.c:13: error: for each function it appears in.)
+..\src\quickSort.c:13: error: `r' undeclared (first use in this function)
+12:54:32 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+Info: Nothing to build for AlgorithmC
+12:55:22 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+12:55:26 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+12:55:53 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+Info: Nothing to build for AlgorithmC
+12:56:34 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+12:59:33 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+13:04:09 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 

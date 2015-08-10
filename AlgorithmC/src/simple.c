@@ -8,6 +8,48 @@
 #include "General.h"
 
 
+/*	考虑地址重叠的情况
+	内存重叠也分两种情况
+         低地址-------------->高地址
+ *
+ * ①
+ * 	/  des     /
+ * 			/    src   /
+ *
+ * ②
+ * 	/	src	  /
+ * 		   /	des		/
+ *
+ * 第一种情况虽然有重叠，但不用考虑会出错，还是常规解决方法。
+ * 第二种情况，由于出现重叠，这时候循环赋值会出问题。需要从后边往前循环赋值。
+ *
+*/
+void* myMemcpy(void* des,void *src,int size){
+	assert(src!=NULL && des!=NULL);
+	char* ret_t = (char*)des;
+	char* src_t = (char*)src;
+	//注意des<src+size
+	if(src<des && des<src+size){
+		ret_t = ret_t+size-1;
+		src_t = src_t+size-1;
+		while(size--) *ret_t-- = *src_t--;
+	}else{
+		while(size--)	*ret_t++ = *src_t++;
+	}
+	return des;
+}
+
+
+
+char* myStrcpy(char* des,const char*src){
+	assert(src!=NULL && des!=NULL);
+	while((*des++=*src++)!='\0') ;
+	*des = '\0';
+	return des;
+}
+
+
+
 int singleNumber(int* nums, int numsSize) {
 
 	int i,res = 0;

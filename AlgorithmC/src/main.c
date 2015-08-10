@@ -15,12 +15,9 @@
 
 int main(void) {
 
-	int arr[] = {9,52,8,7,23,6,51,5,4,91,3,33,2,1};
-	//heapSort(arr,9);
-	quickSort(arr,0,13);
-	int i ;
-	for(i=0;i<14;i++)
-		printf("%d ",arr[i]);
-	printf("\n");
+	char buf[100] = "123456789";
+	myMemcpy(buf+2, buf, 5);
+	//Memcpy(buf, buf+2, 5);
+	printf("%s\n", buf);
 	return 0;
 }

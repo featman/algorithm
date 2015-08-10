@@ -296,3 +296,254 @@ gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "sr
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
 gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+10:52:03 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myMemcpy':
+..\src\simple.c:12: warning: `return' with no value, in function returning non-void
+..\src\simple.c: In function `myStrcpy':
+..\src\simple.c:15: warning: control reaches end of non-void function
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+10:52:13 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myMemcpy':
+..\src\simple.c:12: error: `NULL' undeclared (first use in this function)
+..\src\simple.c:12: error: (Each undeclared identifier is reported only once
+..\src\simple.c:12: error: for each function it appears in.)
+10:52:28 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myStrcpy':
+..\src\simple.c:15: warning: control reaches end of non-void function
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+10:54:12 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myStrcpy':
+..\src\simple.c:15: warning: control reaches end of non-void function
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+11:07:47 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myStrcpy':
+..\src\simple.c:22: warning: control reaches end of non-void function
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+11:12:35 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+11:13:50 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: implicit declaration of function `myStrcpy'
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+11:13:57 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: implicit declaration of function `myStrcpy'
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+11:16:02 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+11:17:46 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: implicit declaration of function `myStrcpy'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myStrcpy':
+..\src\simple.c:17: error: stray '\239' in program
+..\src\simple.c:17: error: stray '\188' in program
+..\src\simple.c:17: error: stray '\157' in program
+..\src\simple.c:17: error: stray '\227' in program
+..\src\simple.c:17: error: stray '\128' in program
+..\src\simple.c:17: error: stray '\128' in program
+..\src\simple.c:17: error: syntax error before '\x0'
+..\src\simple.c: At top level:
+..\src\simple.c:21: warning: type defaults to `int' in declaration of `des'
+..\src\simple.c:21: warning: data definition has no type or storage class
+..\src\simple.c:22: error: syntax error before "return"
+11:17:50 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myStrcpy':
+..\src\simple.c:17: error: stray '\239' in program
+..\src\simple.c:17: error: stray '\188' in program
+..\src\simple.c:17: error: stray '\157' in program
+..\src\simple.c:17: error: stray '\227' in program
+..\src\simple.c:17: error: stray '\128' in program
+..\src\simple.c:17: error: stray '\128' in program
+..\src\simple.c:17: error: assignment of read-only location
+..\src\simple.c:17: warning: suggest parentheses around assignment used as truth value
+11:18:35 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+11:21:11 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+11:21:17 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+11:21:41 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+15:04:06 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: implicit declaration of function `myStrcpy'
+..\src\main.c:23: error: variable or field `aa' declared void
+15:04:09 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: implicit declaration of function `myStrcpy'
+..\src\main.c:23: error: variable or field `aa' declared void
+15:04:21 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: implicit declaration of function `myStrcpy'
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+15:10:11 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+15:19:18 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\heapSort.o" "..\\src\\heapSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:19:48 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:20:03 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+15:27:25 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+15:27:39 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:28:14 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:20: warning: passing arg 1 of `Memcpy' discards qualifiers from pointer target type
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:28:51 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:19: error: assignment of read-only variable `buf'
+..\src\main.c:19: error: incompatible types in assignment
+..\src\main.c:21: warning: passing arg 1 of `Memcpy' discards qualifiers from pointer target type
+15:29:02 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function `main':
+..\src\main.c:19: error: incompatible types in assignment
+15:29:14 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+15:55:17 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:55:31 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:55:50 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:56:33 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:57:58 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:58:24 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+15:58:53 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+16:05:42 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+16:06:02 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+16:51:37 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+..\src\simple.c: In function `myMemcpy':
+..\src\simple.c:34: error: `des_t' undeclared (first use in this function)
+..\src\simple.c:34: error: (Each undeclared identifier is reported only once
+..\src\simple.c:34: error: for each function it appears in.)
+16:51:54 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+16:52:02 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+16:52:28 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
+Info: Nothing to build for AlgorithmC
+16:53:47 **** Incremental Build of configuration Debug for project AlgorithmC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
+gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 

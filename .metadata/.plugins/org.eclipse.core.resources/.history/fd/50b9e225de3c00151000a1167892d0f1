@@ -1,0 +1,85 @@
+/*
+ * SingNumber.c
+ *
+ *  Created on: 2015��8��2��
+ *      Author: Song Zhi-Cheng
+ */
+
+#include "General.h"
+
+
+/*	考虑地址重叠的情况
+	内存重叠也分两种情况
+         低地址-------------->高地址
+ *
+ * ①
+ * 	/  des     /
+ * 			/    src   /
+ *
+ * ②
+ * 	/	src	  /
+ * 		   /	des		/
+ *
+ * 第一种情况虽然有重叠，但不用考虑会出错，还是常规解决方法。
+ * 第二种情况，由于出现重叠，这时候循环赋值会出问题。需要从后边往前循环赋值。
+ *
+*/
+void* myMemcpy(void* des,void *src,int size){
+	assert(src!=NULL && des!=NULL);
+	char* ret_t = (char*)des;
+	char* src_t = (char*)src;
+	if(src<des && des<src)
+
+		while(size--)	*ret_t++ = *src_t++;
+	return des;
+}
+
+
+
+char* myStrcpy(char* des,const char*src){
+	assert(src!=NULL && des!=NULL);
+	while((*des++=*src++)!='\0') ;
+	*des = '\0';
+	return des;
+}
+
+
+
+int singleNumber(int* nums, int numsSize) {
+
+	int i,res = 0;
+	for(i=0;i<numsSize;i++){
+		res ^=nums[i];
+	}
+	return res;
+
+}
+
+
+int maxDepth(struct TreeNode* root) {
+	if(!root) return 0;
+	int leftDept,rightDept;
+	leftDept = maxDepth(root->left);
+	rightDept = maxDepth(root->right);
+
+	return leftDept>rightDept?leftDept+1:rightDept+1;
+}
+
+/*
+Same Tree
+
+Given two binary trees, write a function to check if they are equal or not.
+
+Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+*/
+bool isSameTree(struct TreeNode* p, struct TreeNode* q){
+	if(!p&&!q) return true;
+	if(p&&q)
+		if(p->val != q->val)
+			return false;
+
+	if(!p&&q) return false;
+	if(p&&!q) return false;
+
+	return isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
+}

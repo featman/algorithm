@@ -7,7 +7,7 @@
 
 #ifndef GENERAL_H_
 #define GENERAL_H_
-
+#include <string.h>
 #include <assert.h>
 #define false 0
 #define true 1
@@ -26,6 +26,7 @@ int myAtoi(char* str);
 void heapSort(int arr[], int n);
 void adjustHeap(int arr[],int start,int end);
 void quickSort(int arr[], int left, int right);
-
+void *Memcpy(void *dst, const void *src, size_t size);
+void* myMemcpy(void* des,void *src,int size);
 
 #endif /* GENERAL_H_ */

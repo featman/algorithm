@@ -1,7 +1,7 @@
-13:04:09 **** Incremental Build of configuration Debug for project AlgorithmC ****
+16:53:47 **** Incremental Build of configuration Debug for project AlgorithmC ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\quickSort.o" "..\\src\\quickSort.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\simple.o" "..\\src\\simple.c" 
 gcc -o AlgorithmC.exe "src\\withString.o" "src\\simple.o" "src\\quickSort.o" "src\\main.o" "src\\heapSort.o" 
 
-13:04:10 Build Finished (took 820ms)
+16:53:51 Build Finished (took 4s.34ms)
 

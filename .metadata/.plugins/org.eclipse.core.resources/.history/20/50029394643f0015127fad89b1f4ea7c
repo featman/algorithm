@@ -1,0 +1,17 @@
+/*
+ * binSearch.c
+ *
+ *  Created on: 2015年8月10日
+ *      Author: Song Zhi-Cheng
+ */
+
+
+#include "General.h"
+
+
+//递归查找
+int binSearch(int arr[],int mete,int size){
+	int n = size/2;
+	if(arr == NULL) return -1;
+	if(arr[n] == mete) return n;
+}

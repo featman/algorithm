@@ -1,0 +1,47 @@
+/*
+ ============================================================================
+ Name        : algorithmC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "General.h"
+
+struct a{
+	char a;
+	int b;
+	double c;
+	char d;
+}aa;
+
+
+struct b{
+	char a;
+	int b;
+	double c;
+	char d;
+	int e[20];
+
+}bb;
+
+struct c{
+	char a;
+
+	int b;
+	double c;
+	char d;
+	int e[20];
+	char f;
+}cc;
+
+int main(void) {
+	printf("aa:%d\n",sizeof(aa));
+	printf("bb:%d\n",sizeof(bb));
+	printf("cc:%d\n",sizeof(cc));
+	return 0;
+}

@@ -1,0 +1,71 @@
+/*
+ ============================================================================
+ Name        : algorithmC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "General.h"
+
+//struct a{
+//	char a;
+//	int b;
+//	double c;
+//	char d;
+//}aa;
+//
+//
+//struct b{
+//	char a;
+//	int b;
+//	double c;
+//	char d;
+//	int e[20];
+//
+//}bb;
+//
+//struct c{
+//	char a;
+//	int b;
+//	double c;
+//	char d;
+//	int e[20];
+//	int  f;
+//}cc;
+int Count(char *const a,char *const b)
+
+{//a为主串，b为子串
+
+ char *p=a,*q=b;
+  int count=0;
+  while(*p)
+  {
+  if ((*p==*q)&&(*q)) //匹配条件
+     {
+   p++; q++;
+     }
+    else //不匹配q要重置，并在主串中继续查找
+    {
+     p++; q=b;
+  }
+    if (!(*q)) //匹配后q要重置
+    {
+   count++;
+   q=b;
+     }
+  }
+  return count;
+}
+
+
+int main(void) {
+	char str[] = "123fffaaaaaa";
+	char sub[] = "fff";
+	printf("%d\n",Count(str,sub));
+	return 0;
+}

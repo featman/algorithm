@@ -1,0 +1,98 @@
+/*
+ * withString.c
+ *
+ *  Created on: 2015年8月3日
+ *      Author: Song Zhi-Cheng
+ */
+#include "General.h"
+
+int myAtoi(char* str){
+	int flags = 1;
+	int res = 0;
+	if(!str) return 0;
+	while(*str == ' ') str++;
+	if(*str == '+') {
+		str++;
+		if(*str == '-') return 0;
+	}
+	if(*str == '-') {
+		str++;
+		flags = -1*flags;
+		if(*str == '+') return 0;
+	}
+	while(*str>='0'&&*str<='9'){
+		res = res*10+*str-'0';
+		str++;
+	}
+	return res*flags;
+}
+
+
+char *myReverse(char* str){
+	if(!str) return NULL;
+	char tmp;
+	char* p = str;
+	char* q = str;
+	while(*q) q++;
+	q--;	//key
+	while(q > p) {
+		tmp = *p;
+		*p = *q;
+		*q = tmp;
+		q--;
+		p++;
+	}
+
+	return str;
+}
+
+char* myItoA(int integer){
+	static char str[30] = {0};//key
+	int i = 0;
+	char flag = 0;
+	if(integer < 0){
+		flag = '-';
+		integer = integer*(-1);
+	}
+	while(integer != 0){
+		str[i++] = integer%10 + '0';
+		integer = integer/10;
+	}
+	str[i] = flag;
+	myReverse(str);
+	return str;
+}
+
+
+int searchSubstr(char* des,char* sub){
+	if(!des || !sub) return -1;
+	int count = 0;
+	char* ptr = sub;
+	while(*des!= '\0'){
+		if(*des!=*sub) {
+			des++;
+			continue;
+		}
+		while(*des++ == *sub++){
+			if(*sub == '\0') count++;
+		}
+		sub = ptr;
+
+	}
+	return count;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

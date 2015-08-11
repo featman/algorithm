@@ -27,6 +27,10 @@ void heapSort(int arr[], int n);
 void adjustHeap(int arr[],int start,int end);
 void quickSort(int arr[], int left, int right);
 void *Memcpy(void *dst, const void *src, size_t size);
+int binSearch(int arr[],int mete,int start,int end);
+int binSearchOut(int arr[],int mete,int start,int end);
 void* myMemcpy(void* des,void *src,int size);
+char* myItoA(int integer);
+int searchSubstr(char* des,char* sub);
 
 #endif /* GENERAL_H_ */

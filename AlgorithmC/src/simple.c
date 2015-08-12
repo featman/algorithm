@@ -88,3 +88,29 @@ bool isSameTree(struct TreeNode* p, struct TreeNode* q){
 
 	return isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
 }
+
+
+//一人岁数的3次方是四位数，四次方是六位数，并知道此人岁数的3次方和4次方用遍了0～9十个数字。编写一程序求此人的岁数
+int getAge(int x){
+	int m3 = x*x*x;
+	int m4 = x*x*x*x;
+	if(m3 > 9999 || m3 < 1000) return -1;
+	if(m4 > 999999 || m4 < 100000) return -1;
+	printf("%d,%d\n",m3,m4);
+	int arr[10];
+	int i;
+	for(i = 0;i<10;i++){
+		if(m3>0){
+			arr[i] = m3%10;
+			m3 = m3/10;
+		}else{
+			arr[i] = m4%10;
+			m4 = m4/10;
+		}
+	}
+	//排序后再查看最后一个数是否为9即可。
+	quickSort(arr,0,9);
+	if(arr[9] == 9) return 1;
+	else return -1;
+
+}

@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : algorithmC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "General.h"
+
+
+
+int main(void) {
+	char arr[100] = "  fffffff ffdsa ";
+	int a = lengthOflastword(arr);
+	printf("%d\n",a);
+	char arr1[100] = "abcdefg";
+	rotateString(arr1,1);
+	printf("%s\n",arr1);
+	return 0;
+}

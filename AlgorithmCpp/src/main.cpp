@@ -12,6 +12,12 @@
 int main()
 {
 
+	int i = 23;
+	    int& r = i;
+	    printf("%x,%x",&i,&r);
+
+
+
 	cout<<"helfffffl"<<endl;
 	Solution s;
 	vector<string> val = s.generateParenthesis(3);

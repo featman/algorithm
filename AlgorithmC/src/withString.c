@@ -87,13 +87,105 @@ int searchSubstr(char* des,char* sub){
 
 
 
+/*
+ *
+Given an input string, reverse the string word by word.
+
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+ */
+
+void reverseWords(char *s) {
+
+	myReverse(s);
+	char* p = s;
+	char* q = s;
+
+	while(*q!='\0'){
+		if(*q == ' '){
+			char* p1 = p;
+			char* q1 = q-1;
+			while(p1 < q1){
+				char tmp = *p1;
+				*p1 = *q1;
+				*q1 = tmp;
+				q1--;
+				p1++;
+			}
+			p = q+1;
+		}q++;
+	}
+	char* p2 = p;
+	char* q2 = q-1;
+	while(p2 < q2){
+		char tmp = *p2;
+		*p2 = *q2;
+		*q2 = tmp;
+		q2--;
+		p2++;
+	}
+
+}
 
 
+int replaceBlank(char string[], int length) {
+	int i,j;
+	for(i = 0;i < length; i++) {
+		if(string[i] == ' ') {
+			for(j = length+2; j > i+2; j--) {
+				string[j] = string[j-2];
+			}
+			string[i] = '%';
+			string[i+1] = '2';
+			string[i+2] = '0';
+			length = length+2;
+		}
+	}
+	return length;
+}
+
+//最后一个单词的长度
+int lengthOflastword(char* arr){
+	if(!arr) return -1;
+	int count = 0;
+	int newcount = 0;
+	while(*arr != '\0'){
+		if(*arr != ' ') count++;;
+		if(*arr == ' ' || *(arr+1) =='\0'){
+			newcount = count;
+			count = 0;
+		}
+		arr++;
+	}
+	return newcount;
+}
 
 
+//旋转字符串  给定一个字符串和一个偏移量，根据偏移量旋转字符串(从左向右旋转)
 
-
-
+void rotateString(char* string,int offset){
+	if(!string) return;
+	int count = 0;
+	int i;
+	char *str = string;
+	while(*str != '\0') {
+		count++;
+		str++;
+	}
+//	if(offset > count) return;
+	if(offset == 0) return;
+	else{
+		while(offset){
+			char tmp = *(str-1);
+			for(i=count-1;i>0;i--){
+				string[i] = string[i-1];
+			}
+			string[0] = tmp;
+			offset--;
+		}
+	}
+}
 
 
 

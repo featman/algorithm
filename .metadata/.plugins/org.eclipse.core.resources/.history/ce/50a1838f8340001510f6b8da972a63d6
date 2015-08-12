@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : algorithmC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "General.h"
+
+
+
+int main(void) {
+	int i;
+	for(i=0;i<100;i++){
+		if(getAge(i) == 1) printf("%d\n",i);
+	}
+	return 0;
+}

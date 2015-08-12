@@ -9,6 +9,7 @@
 #define GENERAL_H_
 #include <string.h>
 #include <assert.h>
+#include <stdio.h>
 #define false 0
 #define true 1
 typedef int bool;
@@ -18,6 +19,7 @@ struct TreeNode {
 	struct TreeNode *left;
 	struct TreeNode *right;
 };
+
 
 int singleNumber(int* nums, int numsSize);
 int maxDepth(struct TreeNode* root);
@@ -32,5 +34,11 @@ int binSearchOut(int arr[],int mete,int start,int end);
 void* myMemcpy(void* des,void *src,int size);
 char* myItoA(int integer);
 int searchSubstr(char* des,char* sub);
+int getAge(int x);
+void reverseWords(char *s);
+int replaceBlank(char string[], int length) ;
+int lengthOflastword(char* arr);
+void rotateString(char* string,int offset);
+
 
 #endif /* GENERAL_H_ */
